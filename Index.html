@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compress images for web to improve website speed and performance. Learn how to easily compress your images with our online tool.">
+    <meta name="keywords" content="compress images for web, online image compression, image compression tool, reduce image size, optimize images for web">
+    <title>Compress Images for Web - Online Image Compression Tool</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #e0e0e0;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            color: #b0b0b0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            color: #f0f0f0;
+        }
+
+        section p, section li {
+            color: #d0d0d0;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+        }
+
+        .faq h3 {
+            color: #f0f0f0;
+            margin: 0 0 10px;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #b0b0b0;
+        }
+
+        .footer-menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .footer-menu li {
+            margin: 0 15px;
+        }
+
+        .footer-menu a {
+            color: #b0b0b0;
+            text-decoration: none;
+        }
+
+        .footer-menu a:hover {
+            color: #ffffff;
+        }
+
+        .image-compressor {
+            text-align: center;
+        }
+
+        .image-compressor input {
+            margin: 10px 0;
+        }
+
+        .image-compressor button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #6200ea;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .image-compressor button:hover {
+            background-color: #3700b3;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #03dac6;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .download-button:hover {
+            background-color: #018786;
+            color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            header, footer {
+                padding: 15px;
+            }
+
+            ol {
+                padding-left: 15px;
+            }
+
+            .footer-menu li {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Compress Images for Web</h1>
+    <p>Optimize your website speed by compressing images without losing quality. Use our online tool to easily compress your images.</p>
+</header>
+
+<section id="introduction">
+    <h2>Introduction</h2>
+    <p>Welcome to our online image compression tool! We understand the importance of fast-loading websites, and one of the best ways to achieve this is by optimizing your images. Our tool allows you to compress images quickly and easily, ensuring your website remains fast and efficient.</p>
+</section>
+<section class="image-compressor">
+    <h2>Compress Your Image Now</h2>
+    <input type="file" id="upload" accept="image/*">
+    <button onclick="compressImage()">Compress Image</button>
+    <div id="output"></div>
+</section>
+<section id="how-to-use">
+    <h2>How to Use Our Image Compression Tool</h2>
+    <ol>
+        <li><strong>Visit Our Website:</strong> Go to our homepage where you will find the image compression tool prominently displayed.</li>
+        <li><strong>Upload Your Image:</strong> Click on the "Upload" button and select the image you wish to compress from your computer.</li>
+        <li><strong>Choose Compression Settings:</strong> Adjust the compression level according to your needs. Our tool offers various settings to balance quality and file size.</li>
+        <li><strong>Compress and Download:</strong> Click on the "Compress" button. Within seconds, your image will be processed. Once done, you can download the compressed image directly to your device.</li>
+    </ol>
+</section>
+
+<section id="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+        <h3>Why should I compress images for web use?</h3>
+        <p>Compressing images reduces their file size, which speeds up your website. Faster websites provide a better user experience and rank higher on search engines.</p>
+    </div>
+    <div class="faq">
+        <h3>Will compressing images reduce their quality?</h3>
+        <p>Our tool uses advanced algorithms to minimize file size while maintaining the highest possible image quality. You can adjust the compression level to find the perfect balance.</p>
+    </div>
+    <div class="faq">
+        <h3>What image formats can I compress?</h3>
+        <p>Our tool supports popular formats such as JPEG, PNG, and GIF.</p>
+    </div>
+    <div class="faq">
+        <h3>Is there a limit to the number of images I can compress?</h3>
+        <p>You can compress as many images as you need. There are no restrictions on the number of images.</p>
+    </div>
+    <div class="faq">
+        <h3>How long does the compression process take?</h3>
+        <p>The compression process is quick, usually taking just a few seconds per image, depending on the file size and your internet connection.</p>
+    </div>
+    <div class="faq">
+        <h3>Is my image data secure?</h3>
+        <p>Absolutely. We prioritize your privacy and security. All images are processed securely and are not stored on our servers after compression.</p>
+    </div>
+</section>
+
+
+
+<footer>
+    <ul class="footer-menu">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#how-to-use">How to Use</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <p>&copy; 2024 Compress Images for Web. All rights reserved.</p>
+</footer>
+
+<script>
+    function compressImage() {
+        const fileInput = document.getElementById('upload');
+        const output = document.getElementById('output');
+        const file = fileInput.files[0];
+
+        if (file && file.type.match('image.*')) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const img = new Image();
+                img.onload = function() {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    const maxW = 800;
+                    const scaleSize = maxW / img.width;
+                    canvas.width = maxW;
+                    canvas.height = img.height * scaleSize;
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                    const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
+                    displayCompressedImage(compressedDataUrl);
+                }
+                img.src = event.target.result;
+            }
+            reader.readAsDataURL(file);
+        } else {
+            output.innerHTML = '<p>Please upload a valid image file.</p>';
+        }
+    }
+
+    function displayCompressedImage(dataUrl) {
+        const output = document.getElementById('output');
+        output.innerHTML = `
+            <h3>Compressed Image</h3>
+            <img src="${dataUrl}" alt="Compressed Image" style="max-width: 100%;">
+            <a href="${dataUrl}" download="compressed-image.jpg" class="download-button">Download Compressed Image</a>
+        `;
+    }
+</script>
+
+</body>
+</html>
